@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Copssy </title>
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnu7rpsiD1lAMRL4nTy89amChCRddau0LAxQ&usqp=CAU">
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            /*display: flex;
+            justify-content: center;
+            align-items: center;*/
+            height: 100vh;
+            margin: 0;
+            /*background-image: url('b10.jpg');
+            background-size: cover;*/ 
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+      
+        .profile button {
+            
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50; 
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .log button {
+            
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50; 
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .header {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .top-right button {
+            margin-left: 10px;
+        }
+        .middlebox {
+            background: transparent;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 1250px;
+            justify-content: center;
+            text-align: center;
+            bottom: -40%;
+        }
+        .middlebox h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+         h1 {
+            text-align: center;
+        }
+        .middlebox {
+            position: relative;
+            margin-bottom: 15px;
+            
+        }
+        .img1 {
+            height: 10px;
+            width: 5px;
+        }
+        .img2 {
+            height: 10px;
+            width: 5px;
+        }
+        .img3 {
+            height: 10px;
+            width: 5px;
+        }
+        .img4 {
+            height: 10px;
+            width: 5px;
+        }
+        .all-img {
+            display: flex;
+            justify-content: space-around;
+            size: 0cqmin;
+        }
+        .middlebox img {
+           /* position: absolute;*/
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 90px;
+            height: 75px;
+            justify-content: space-between;
+        }
+        .middlebox input {
+            width: calc(100% - 40px);
+            padding: 10px 20px 10px 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .middlebox .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .middlebox .links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .middlebox .links {
+            text-decoration: underline;
+        }
+        .logo img {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+        .ab h1{
+         color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="abc">
+            <a href="next.html"><h1>Copssy</h1></a>
+        </div>
+    </div>
+    <div class="logo">
+        <a href="next.html"><img src="file.png" alt="Logo" width="95px" height="95px"></a>
+    </div>
+    <div class="top-right">
+        <button onclick="location.href='next.html'">Home</button>
+        <button onclick="location.href='setting.html'">Settings</button>
+        <button onclick="location.href='profile.html'">Profile</button>
+        <button onclick="logout()" onclick="location.href='index.html'">Log Out</button>
+    </div>
+    <h1> WELCOME !!</h1>
+    <h2>
+        <b>This Copssy website is an online shopping platform designed to provide a seamless and user-friendly experience for customers to browse, select, and purchase products. The website aims to offer a wide variety of products, ranging from electronics and fashion to home goods and groceries, ensuring that customers can find everything they need in one place.</b>
+    </h2>
+   
+    <div class="middlebox">
+        <h2> OUR SOICAL MEDIA !!</h2>
+<div class="all-img">
+    <div class="img1">
+        <a href="https://www.instagram.com/gurux04?igsh=NWJ2anFmNXBsZHEw"><img src="data:image/png;base64,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" alt="Instagram"></a>
+    </div>
+    <div class="img2">
+        <a href="https://www.facebook.com/guru.offx"><img src="data:image/png;base64,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" alt="Facebook"></a>
+    </div>
+    <div class="img3">   
+        <a href="https://chat.whatsapp.com/K79D6eyHLpyJWPBshPArAt"><img src="data:image/jpeg;base64,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" alt="Whatsapp"></a>
+    </div>
+    <div class="img4">
+        <a href="https://x.com/chiragkb04"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0KMZvxPdcZkRUvn7MigzQVj2uRBVfHI1Pw&s" alt="Twitter"></a>
+    </div>
+</div>
+<br>
+<br>
+        <h3> THANK YOU FOR VISTING :)</h3>
+        <div class="logo1">
+            <a href="next.html"><img src="file.png" alt="Logo" width="250px" height="250px"></a>
+        </div>
+    </div>    
+    <script>
+        function logout() {
+            alert("Logged out!");
+            location.href = 'index.html'; 
+        }
+    </script>
+</body>
+</html>
